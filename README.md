@@ -15,7 +15,6 @@ To spin up local dev, run:
 2. In terminal 2: `sudo npm i -g @stackbit/cli@0.2.4`
 ``` 
 stackbit dev \
-stackbit dev \
     -c contentful \
     --contentful-space-id <space_id> \
     --contentful-preview-token <preview_token> \
