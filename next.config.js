@@ -15,14 +15,14 @@ module.exports = withBundleAnalyzer({
         // Allow production builds to successfully complete even if your project has ESLint errors.
         ignoreDuringBuilds: true
     },
-    redirects: async () => {
-        // wait for sourcebit to generate sourecbit-nextjs-cache file before proceeding to load tailwind config
-        if (!devServerStarted) {
-            devServerStarted = true;
-            await sourcebit.fetch(sourcebitConfig);
-        }
-        return [];
-    },
+    // redirects: async () => {
+    //     // wait for sourcebit to generate sourecbit-nextjs-cache file before proceeding to load tailwind config
+    //     if (!devServerStarted) {
+    //         devServerStarted = true;
+    //         await sourcebit.fetch(sourcebitConfig);
+    //     }
+    //     return [];
+    // },
     webpack: (config, { webpack, dev }) => {
         // Tell webpack to ignore watching content files in the content folder.
         // Otherwise webpack recompiles the app and refreshes the whole page.
