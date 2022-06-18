@@ -33,7 +33,7 @@
     },
     "devDependencies": {
         "@next/bundle-analyzer": "^11.1.2",
-        "@stackbit/cli": "^0.1.25",
+        "@stackbit/cli": "^0.2.28",
         "@stackbit/cms-contentful": "0.0.10",
         "@types/react": "^17.0.37",
         "autoprefixer": "^10.2.6",
